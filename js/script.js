@@ -4,4 +4,32 @@ Dopo 30 secondi l’utente deve inserire, uno alla volta, i numeri che ha visto 
 Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 */
 
-console.log('ciao');
+
+
+// creare il timer
+// creare 5 prompt che chiederanno i numeri da ricordare
+// verificare se le risposte corrispondono ai numeri estratti
+
+
+
+// ciclo la funzione per 5 volte per crere 5 numeri casuali
+const nTot = 5;
+
+for(let i=0; i < nTot; i++){
+  
+  // salvo in una variabile la funzione che genera un numero casuale
+  let randomNumber = generateRandomNumber(1,100);
+  console.log(randomNumber);
+}
+
+
+
+/*--------------------
+FUNCTIONS
+---------------------*/
+
+// generaro la funzione per la creazione di numeri random
+function generateRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
